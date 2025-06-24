@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+const base = process.env.NODE_ENV === 'production' ? '/Company_Intro_lovable' : '';
+
 const portfolioData = {
   ko: {
     title: 'Portfolio',
@@ -12,7 +14,7 @@ const portfolioData = {
         tags: ['프로젝트 관리', '상위 기획', '상세 설계(App/Web)', '그래픽 디자인', '콘텐츠 기획/제작'],
         partners: '연세 의료원, 강남 세브란스 병원, 원주 기독 세브란스 병원, 휴레이포지티브',
         status: '임상 진행 중',
-        image: '/placeholder.svg'
+        image: `${base}/placeholder.svg`
       },
       {
         title: '피치스 (PEACHIS)',
@@ -20,7 +22,7 @@ const portfolioData = {
         tags: ['프로젝트 관리', '상위 기획', '상세 설계(App/Web)', '그래픽 디자인', '콘텐츠 기획/제작'],
         partners: '사단법인 폐고혈압을 이기는 사람들, 휴레이포지티브',
         status: '서비스 운영 중',
-        image: '/placeholder.svg'
+        image: `${base}/placeholder.svg`
       },
       {
         title: '에이미라클 (Eimiracle)',
@@ -28,7 +30,7 @@ const portfolioData = {
         tags: ['프로젝트 관리', '상위 기획', '상세 설계'],
         partners: '명지병원, 메트렉스 헬스케어, 휴레이포지티브',
         status: '서비스 운영 중',
-        image: '/placeholder.svg'
+        image: `${base}/placeholder.svg`
       },
       {
         title: '앳플로우 (ATFLOW)',
@@ -36,7 +38,7 @@ const portfolioData = {
         tags: ['플랫폼 개발', '서비스 기획'],
         partners: '자체 프로젝트',
         status: '준비 중',
-        image: '/placeholder.svg'
+        image: `${base}/placeholder.svg`
       }
     ]
   },
@@ -50,7 +52,7 @@ const portfolioData = {
         tags: ['Project Management', 'High-level Planning', 'Detailed Design (App/Web)', 'Graphic Design', 'Content Planning/Production'],
         partners: 'Yonsei University Health System, Gangnam Severance Hospital, Wonju Severance Christian Hospital, Huray Positive',
         status: 'Clinical trials in progress',
-        image: '/placeholder.svg'
+        image: `${base}/placeholder.svg`
       },
       {
         title: 'PEACHIS',
@@ -58,7 +60,7 @@ const portfolioData = {
         tags: ['Project Management', 'High-level Planning', 'Detailed Design (App/Web)', 'Graphic Design', 'Content Planning/Production'],
         partners: 'PHA Korea, Huray Positive',
         status: 'In service',
-        image: '/placeholder.svg'
+        image: `${base}/placeholder.svg`
       },
       {
         title: 'Eimiracle',
@@ -66,7 +68,7 @@ const portfolioData = {
         tags: ['Project Management', 'High-level Planning', 'Detailed Design'],
         partners: 'Myongji Hospital, Metrex Healthcare, Huray Positive',
         status: 'In service',
-        image: '/placeholder.svg'
+        image: `${base}/placeholder.svg`
       },
       {
         title: 'ATFLOW',
@@ -74,7 +76,7 @@ const portfolioData = {
         tags: ['Platform Development', 'Service Planning'],
         partners: 'Internal Project',
         status: 'In preparation',
-        image: '/placeholder.svg'
+        image: `${base}/placeholder.svg`
       }
     ]
   }
