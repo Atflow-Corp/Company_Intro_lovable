@@ -28,12 +28,14 @@ const AppContent = () => {
   );
 }
 
+const base = process.env.NODE_ENV === 'production' ? '/Company_Intro_lovable' : '';
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename={base}>
         <AppContent />
       </BrowserRouter>
     </TooltipProvider>
